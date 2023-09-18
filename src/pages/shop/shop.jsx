@@ -16,7 +16,7 @@ export const Shop = () => {
     return (
         <div className='shop'>
             <div className='shop__title'>
-                <h1>React E-commerce Site</h1>
+                <h1>Products</h1>
             </div>
             <div className='shop__products'>
                 {productData.map((product) => (

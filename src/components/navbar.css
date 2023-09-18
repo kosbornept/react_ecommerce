@@ -4,7 +4,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 3em;
+    height: 10vh;
+    font-family: 'Mooli', sans-serif;
 }
 
 .links {

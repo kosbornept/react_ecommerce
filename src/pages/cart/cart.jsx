@@ -19,26 +19,33 @@ export const Cart = () => {
       })
   }, [setProductData])
   return (
-    <div className='cart'>
-      <div>
-        <h1>Your Cart Items</h1>
-      </div>
+    <div className='cartWrapper'>
       <div className='cart'>
-        {productData.map((product) => {
-          if(cartItems[product.id] !== 0) {
-            return <CartItem key={product.id} data={product} />
-          }
-        })}  
+        <div>
+          <h1>Your Cart Items</h1>
+        </div>
+        <div className='cart'>
+          {productData.map((product) => {
+            if(cartItems[product.id] !== 0) {
+              return <CartItem key={product.id} data={product} />
+            }
+          })}  
+        </div>
       </div>
-      {totalAmount > 0 ?
-      <div className='checkout'>
-        
-        <h3>Subtotal: {totalAmount}€</h3>
-        <button onClick={() => navigate("/shop")}>Continue Shopping</button>
-        <button disabled>Checkout</button>
+      <div>
+        {totalAmount > 0 ?
+        <div className='checkout'>
+          
+          <h3>Subtotal: {totalAmount}€</h3>
+          <div>
+            <button className='checkoutBtn' onClick={() => navigate("/shop")}>Continue Shopping</button>
+            <button disabled>Checkout</button>
+          </div>
+        </div>
+        : <h1>Your Cart is Empty</h1> } 
       </div>
-      : <h1>Your Cart is Empty</h1> } 
     </div>
+        
   )
 }
 

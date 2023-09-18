@@ -1,51 +1,81 @@
-.cart {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .cartItem {
-    width: 700px;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 25px;
-    margin: 30px;
-  }
-  
-  .cartItem img {
-    width: 20%;
-    margin: 1em 2em;
-  }
-  
-  .cartItem__description {
-    width: 100%;
-    font-size: 30px;
-  }
+.cartWrapper {
+  display: flex;
+  justify-content: center;
+}
 
-  .cartItem__description h2 {
-    font-size: 1em;
-  }
-  
-  .cartItem__description h3 {
-    font-size: .8em;
-  }
-  
-  .countHandler input {
-    width: 40px;
-    text-align: center;
-    font-weight: bolder;
-  }
-  
-  .checkout button {
-    width: 150px;
-    height: 50px;
-    background-color: rgb(19, 19, 19);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    margin: 10px;
-    cursor: pointer;
-  }
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartItem {
+  width: 700px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin: 30px;
+}
+
+.cartItem img {
+  width: 20%;
+  margin: 1em 2em;
+}
+
+.cartItem__description {
+  width: 100%;
+  font-size: 30px;
+}
+
+.cartItem__description h2 {
+  font-size: 1em;
+}
+
+.cartItem__description h3 {
+  font-size: .8em;
+}
+
+.countHandler input {
+  width: 40px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+  margin: 20vh 0 0 5vw;
+  border: solid lightgray .15em;
+  padding: 3em;
+  position: fixed;
+}
+
+.checkoutBtn,
+.checkout button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  background-color: rgb(19, 19, 19);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.checkoutBtn:hover {
+  background-color: lightseagreen;
+  transition: .2s ease-in;
+  cursor: pointer !important;
+}
+
+.checkout button:hover {
+  cursor: not-allowed;
+}
