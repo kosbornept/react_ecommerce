@@ -13,8 +13,8 @@ function App() {
         <Router>
           <Navbar />
           <Routes>
-            <Route path='/' element={ <Shop /> } />
-            <Route path="/cart" element={ <Cart /> } />
+            <Route path='/react_ecommerce/shop' element={ <Shop /> } />
+            <Route path="/react_ecommerce/cart" element={ <Cart /> } />
           </Routes>
         </Router>
       </ShopContextProvider>
