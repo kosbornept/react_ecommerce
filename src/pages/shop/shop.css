@@ -1,0 +1,84 @@
+.shop__title {
+    margin-top: 2em;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.shop__products {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.product {
+    border-radius: 15px;
+    width: 300px;
+    height: 350px;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.product img {
+    width: 60%;
+}
+
+.product__description {
+    text-align: center;
+}
+
+.product__category_mens {
+    background-color: lightcoral;
+    color: black;
+    border: none;
+    margin: 1em;
+}
+
+.product__category_jewelery {
+    background-color: gold;
+    color: black;
+    border: none;
+    margin: 1em;
+}
+
+.product__category_electronics {
+    background-color: lightblue;
+    color: black;
+    border: none;
+    margin: 1em;
+}
+
+.product__category_womens {
+    background-color: lightgreen;
+    color: black;
+    border: none;
+    margin: 1em;
+}
+
+.product:hover {
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+
+.addToCartBtn {
+    background-color: transparent;
+    border: 2px solid rgb(19, 19, 19);
+    min-width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    transition: .2s ease-out;
+  }
+  
+  .addToCartBtn:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    cursor: pointer;
+    transition: .2s ease-in;
+  }
