@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <ShopContextProvider>
-        <Router basename={import.meta.env.DEV ? '/' : '/react_ecommerce/'}>
+        <Router>
           <Navbar />
           <Routes>
             <Route path='/' element={ <Shop /> } />
