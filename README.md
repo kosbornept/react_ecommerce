@@ -1,8 +1,7 @@
-# React + Vite
+# React Front-End Commerce Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Practicing state management using this simple commerce site.
 
-Currently, two official plugins are available:
+## Issues
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Built purely to practice state management, therefore site is not responsive and may contain some css issues.
